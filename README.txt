@@ -1,1 +1,0 @@
-exercícios diversos de programação

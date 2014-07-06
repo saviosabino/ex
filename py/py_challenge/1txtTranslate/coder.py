@@ -1,3 +1,4 @@
+#! /usr/bin/python
 
 def translate(text, num=2):
     l = list(text)
@@ -15,7 +16,7 @@ def translate(text, num=2):
     l = map(chr, ln)
     return ''.join(l)
 
-def tr(text, num=2):
+def tr(text):
     import string
     tb = string.maketrans(string.lowercase, 
         string.lowercase[2:] + string.lowercase[:2])
@@ -36,3 +37,8 @@ def flow():
     if ord(')') not in l:
         print 'if'
     else: print 'else'
+
+if __name__ == '__main__':
+    print('tr: ',trFromFile(), '\n')
+    print('tr in url: ',tr('map')) 
+

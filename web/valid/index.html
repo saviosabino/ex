@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>A form</title>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css'/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<script type='text/javascript' src='script.js'></script>
+    </head>
+    <body>
+        <div id="header"><h1>A form</h1></div>
+        <div id="wrapper">
+            <div id="inputs">
+                <form name ="aform">
+                   First Val: <input type="text" name="tx1" value="val" required>
+                   <br/>
+                   <p>Second Val: <input type="text" name="tx2" value="val2"></p>
+                   <br/>
+                   <p>A Date: <input type="text" id="adate" name="adate" required></p>
+               
+                   <br/>Message: <br/>
+                   <textarea name="mgs">dft</textarea><br/><br/>
+                   <input type="radio" name="choice" required>yes
+                   <input type="radio" name="choice">no <br/><br/>
+                   <input type="checkbox" name="ch1"> choose option one <br/>
+                   <input type="checkbox" checked name="ch2"> choose2 option two <br/><br/>
+                   <button>send</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
+
